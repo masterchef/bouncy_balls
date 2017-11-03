@@ -14,7 +14,7 @@ class Vector(object):
 
     def update(self, x, y):
         self.speed = math.sqrt(x**2 + y**2)
-        print "Update velocity: {0}, {1}, curr_angle: {2}".format(x, y, self.angle)
+        # print "Update velocity: {0}, {1}, curr_angle: {2}".format(x, y, self.angle)
         angle = math.degrees(math.atan(y/x))
         # First quadrant
         if x >= 0 and y >= 0:
@@ -29,7 +29,7 @@ class Vector(object):
         if x >=0 and y < 0:
             self.angle = 360 - angle
 
-        print "New: {0}".format(self.angle)
+        # print "New: {0}".format(self.angle)
 
     def get_angle(self, degrees=False):
         if degrees:

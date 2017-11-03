@@ -62,11 +62,11 @@ class Ball(object):
         v2x = math.cos(ball.move_angle(deg=False)) * ball.move_speed()
         v2y = math.sin(ball.move_angle(deg=False)) * ball.move_speed()
 
-        print "v1x: {0}, v1y: {1}     -     v2x: {2}, v2y: {3}".format(v1x, v1y, v2x, v2y)
+        #print "v1x: {0}, v1y: {1}     -     v2x: {2}, v2y: {3}".format(v1x, v1y, v2x, v2y)
         new_v1x, new_v2x = calculate_new_speed(self.mass, v1x, ball.mass, v2x)
         new_v1y, new_v2y = calculate_new_speed(self.mass, v1y, ball.mass, v2y)
 
-        print "v1x: {0}, v1y: {1}     -     v2x: {2}, v2y: {3}".format(new_v1x, new_v1y, new_v2x, new_v2y)
+        #print "v1x: {0}, v1y: {1}     -     v2x: {2}, v2y: {3}".format(new_v1x, new_v1y, new_v2x, new_v2y)
         self.update_velocity(new_v1x, new_v1y)
         ball.update_velocity(new_v2x, new_v2y)
 
